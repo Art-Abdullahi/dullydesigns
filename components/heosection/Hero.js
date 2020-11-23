@@ -14,7 +14,7 @@ const Hero = () => {
       <TestParticle />
       <BackgroundContainer>
         <ImageContainer>
-          <Img src="/hero2.svg" />
+          <Img src="/hero2.svg" height="400px" width="100%" />
         </ImageContainer>
         <InfoContainer>
           <h1>FULL-STACK DEVELOPER</h1>

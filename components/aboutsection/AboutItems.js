@@ -45,8 +45,6 @@ export const AboutInfo = styled.div`
 `;
 
 export const AboutImage = styled.img`
-  width: 50%;
-  height: 100%;
   padding: 25px 25px 0 25px;
   @media screen and (max-width: 480px) {
     width: 80%;

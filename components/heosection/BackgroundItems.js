@@ -18,8 +18,6 @@ export const BackgroundContainer = styled.div`
 `;
 
 export const Img = styled.img`
-  height: 400px;
-
   @media screen and (max-width: 480px) {
     height: 300px;
   }
