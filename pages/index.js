@@ -1,6 +1,7 @@
 import Head from "next/head";
 import About from "../components/aboutsection/About";
 import Hero from "../components/heosection/Hero";
+import Projects from "../components/projectsection/Projects";
 import TestParticle from "../components/TestParticle";
 
 export default function Home() {
@@ -16,7 +17,9 @@ export default function Home() {
       </Head>
 
       <Hero />
+
       <About />
+      <Projects />
     </div>
   );
 }

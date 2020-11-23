@@ -25,14 +25,11 @@ export const Img = styled.img`
   }
 `;
 export const InfoContainer = styled.div`
-  font-size: 1.3rem;
   text-align: left;
   height: auto;
   width: 100%;
   color: #5ce1e6;
-  font-family: cooper-black-std, serif;
-  font-weight: 400;
-  font-style: normal;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
