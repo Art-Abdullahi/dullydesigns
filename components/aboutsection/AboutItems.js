@@ -40,6 +40,7 @@ export const AboutInfo = styled.div`
   @media screen and (max-width: 480px) {
     width: 100%;
     flex-direction: column;
+    margin-top: 5rem;
   }
 `;
 
