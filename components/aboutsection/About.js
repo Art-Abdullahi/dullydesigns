@@ -22,7 +22,7 @@ const About = () => {
             worked on numerous projects of some which are showcased below.
           </p>
         </AboutInfo>
-        <AboutImage src="/dully.png" width="50%" height="100%"></AboutImage>
+        <AboutImage src="/red.svg" width="50%" height="100%"></AboutImage>
       </AboutInfoContainer>
     </AboutContainer>
   );

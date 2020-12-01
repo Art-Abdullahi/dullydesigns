@@ -13,10 +13,11 @@ const TestParticle = () => {
           size: {
             value: 3,
           },
+          color: "#ff0000",
           line_linked: {
             enable: true,
             distance: 150,
-            color: "#5ce1e6",
+            color: "#FF0000",
             opacity: 0.4,
             width: 1,
           },

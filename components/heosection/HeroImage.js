@@ -4,7 +4,7 @@ import { ImageContainer, Img } from "./BackgroundItems";
 const HeroImage = () => {
   return (
     <ImageContainer>
-      <Img src="/hero2.svg" height="400px" width="100%" />
+      <Img src="/abouts.svg" height="400px" width="100%" />
     </ImageContainer>
   );
 };

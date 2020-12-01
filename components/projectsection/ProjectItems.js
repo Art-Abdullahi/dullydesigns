@@ -24,4 +24,11 @@ export const ProjectHeading = styled.h1`
 export const ProjectGrid = styled.div`
   width: 100%;
   height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  @media screen and (max-width: 480px) {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
 `;

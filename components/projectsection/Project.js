@@ -9,7 +9,7 @@ const Project = () => {
 
         margin: "24px 24px 24px 24px",
 
-        boxShadow: "-3px -3px 5px #5ce1e6, 3px 3px 15px #5ce1e6",
+        boxShadow: "-3px -3px 5px #ff0000, 3px 3px 15px #ff0000",
       }}
     >
       <div className="card">

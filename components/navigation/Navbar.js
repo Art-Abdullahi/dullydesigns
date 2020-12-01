@@ -9,37 +9,42 @@ import {
   NavLinks,
   NavItem,
 } from "./NavbarItems";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaMoon, FaSun } from "react-icons/fa";
 
 import Link from "next/link";
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, toggleTheme }) => {
   return (
     <>
-      <Nav>
+      <nav>
         <NavbarContainer>
-          <NavLogo src="/dd.png" height="70px" width="50px"></NavLogo>
+          <NavLogo>DullyDesigns</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks>
+              <div className="navLink">
                 <Link href="/">Home</Link>
-              </NavLinks>
+              </div>
             </NavItem>
             <NavItem>
-              <NavLinks>
+              <div className="navLink">
                 <Link href="/about">About</Link>
-              </NavLinks>
+              </div>
             </NavItem>
             <NavItem>
-              <NavLinks>
+              <div className="navLink">
                 <Link href="/projects">Projects</Link>
-              </NavLinks>
+              </div>
+            </NavItem>
+            <NavItem>
+              <div className="navLink">
+                <FaMoon onClick={toggleTheme} />{" "}
+              </div>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
-      </Nav>
+      </nav>
     </>
   );
 };

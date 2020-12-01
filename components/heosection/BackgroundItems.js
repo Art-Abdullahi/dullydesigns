@@ -48,10 +48,10 @@ export const ImageContainer = styled.div`
 `;
 
 export const Button = styled.button`
-  background: #5ce1e6;
+  background: #ff0000;
   border-radius: 3px;
-  border: 2px solid #5ce1e6;
-  color: black;
+  border: 2px solid #ff0000;
+  color: white;
   font-size: 2rem;
   margin: 0.5em 1em;
   padding: 0.25em 1em;

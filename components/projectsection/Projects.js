@@ -9,6 +9,11 @@ const Projects = () => {
         <ProjectHeading>Projects</ProjectHeading>
         <ProjectGrid>
           <Project />
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+          <Project />
         </ProjectGrid>
       </ProjectContainer>
     </div>
