@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.body};
     z-index: -1000;
     scroll-behavior: smooth;
-
+    transition: all 0.25s linear;
 
   }
 
@@ -91,7 +91,7 @@ nav{
   position: sticky;
   top: 0;
   z-index: 10;
-  
+  transition: all 0.25s linear;
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -106,7 +106,7 @@ font-weight: 300;
 font-style: normal;
 font-size: 1rem;
 padding: 0 1rem;
-cursor: pointer;.
+cursor: pointer;
   }
 }
 @media screen and (max-width: 480px) {
