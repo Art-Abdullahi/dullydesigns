@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import { ProjectsContext } from "./ProjectContext";
 
 const Project = () => {
+  const { projects, getProjects } = useContext(ProjectsContext);
+  useEffect(() => {
+    getProjects();
+  }, []);
   return (
     <div
       style={{
@@ -12,6 +17,7 @@ const Project = () => {
         boxShadow: "-3px -3px 5px #ff0000, 3px 3px 15px #ff0000",
       }}
     >
+      {console.log(projects)}
       <div className="card">
         <div>
           <img src="/foodhub.png" height="200px" width="100%" />

@@ -1,21 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import Project from "./Project";
+import ProjectProvider from "./ProjectContext";
 import { ProjectContainer, ProjectGrid, ProjectHeading } from "./ProjectItems";
 
 const Projects = () => {
   return (
     <div>
-      <ProjectContainer>
-        <ProjectHeading>Projects</ProjectHeading>
-        <ProjectGrid>
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-        </ProjectGrid>
-      </ProjectContainer>
+      <ProjectProvider>
+        <ProjectContainer>
+          <ProjectHeading>Projects</ProjectHeading>
+          <ProjectGrid>
+            <Project />
+          </ProjectGrid>
+        </ProjectContainer>
+      </ProjectProvider>
     </div>
   );
 };
