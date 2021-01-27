@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
         <GlobalStyles />
-        <Navigation toggleTheme={toggleTheme} />
+
         <Component {...pageProps} />
       </ThemeProvider>
     </>

@@ -28,11 +28,12 @@ export const GlobalStyles = createGlobalStyle`
 p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.5rem;
+  font-weight: bold;
   color: ${({ theme }) => theme.p};
   line-height: 2rem;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   font-family: cooper-black-std, serif;
   font-weight: 400;
   color: ${({ theme }) => theme.h1};
@@ -53,7 +54,40 @@ h6 {
 
   color: black;
 }
+.first-box{
+  height: 100vh;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 15px;
+  
+}
 
+.second-box{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 15px;
+}
+.navbarItems{
+    border: 5px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+    background-color: white;
+    color: white;
+    @media screen and (max-width: 480px) {
+      
+    }
+}
 .card {
   line-height: 1rem;
 }
@@ -111,7 +145,10 @@ cursor: pointer;
 }
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 1.3rem;
+    font-size: 2.5rem;
+  }
+  h3{
+    font-size: 1rem;
   }
   p {
     font-size: 1rem;

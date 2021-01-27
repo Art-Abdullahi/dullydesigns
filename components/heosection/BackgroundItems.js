@@ -6,10 +6,10 @@ export const BackgroundContainer = styled.div`
   margin-top: 0;
 
   display: flex;
-  padding: 0 24px;
+
   background: transparent;
 
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   @media screen and (max-width: 480px) {
@@ -23,18 +23,18 @@ export const Img = styled.img`
   }
 `;
 export const InfoContainer = styled.div`
-  text-align: left;
+  text-align: center;
   height: auto;
   width: 100%;
   color: #5ce1e6;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: left;
+
+  align-items: center;
   @media screen and (max-width: 480px) {
     font-size: 0.8rem;
-    text-align: left;
+    text-align: center;
   }
 `;
 export const ImageContainer = styled.div`

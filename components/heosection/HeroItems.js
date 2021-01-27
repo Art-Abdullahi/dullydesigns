@@ -6,7 +6,6 @@ import HeroInfo from "./HeroInfo";
 const HeroItems = () => {
   return (
     <BackgroundContainer>
-      <HeroImage />
       <HeroInfo />
     </BackgroundContainer>
   );
