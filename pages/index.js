@@ -2,6 +2,8 @@ import Head from "next/head";
 
 import About from "../components/aboutsection/About";
 import Hero from "../components/heosection/Hero";
+import Navigation from "../components/navigation/Navigation";
+import Newnav from "../components/navigation/Newnav";
 import Projects from "../components/projectsection/Projects";
 
 export default function Home() {
@@ -15,7 +17,7 @@ export default function Home() {
           href="https://use.typekit.net/tpl7rpa.css"
         ></link>
       </Head>
-
+      <Navigation />
       <Hero />
     </div>
   );

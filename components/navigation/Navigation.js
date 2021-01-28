@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Newnav from "./Newnav";
 import SideBar from "./SideBar";
 
 const Navigation = ({ toggleTheme }) => {
@@ -11,7 +12,7 @@ const Navigation = ({ toggleTheme }) => {
   return (
     <>
       <SideBar isOpen={isOpen} toggle={toggle} />
-      <Navbar isOpen={isOpen} toggle={toggle} toggleTheme={toggleTheme} />
+      <Newnav isOpen={isOpen} toggle={toggle} toggleTheme={toggleTheme} />
     </>
   );
 };

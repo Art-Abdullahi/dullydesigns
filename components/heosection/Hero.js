@@ -5,7 +5,11 @@ import Split from "./Split";
 
 const Hero = () => {
   return (
-    <div style={{ height: "100vh", border: "5px solid blue" }}>
+    <div
+      style={{
+        height: "100%",
+      }}
+    >
       <Split />
     </div>
   );

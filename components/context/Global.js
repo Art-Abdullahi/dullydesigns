@@ -15,7 +15,7 @@ export const GlobalStyles = createGlobalStyle`
     z-index: -1000;
     scroll-behavior: smooth;
     transition: all 0.25s linear;
-
+    
   }
 
   a {
@@ -76,17 +76,22 @@ h6 {
     justify-content: center;
     padding-left: 15px;
 }
-.navbarItems{
-    border: 5px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 50%;
-    background-color: white;
-    color: white;
-    @media screen and (max-width: 480px) {
-      
-    }
+.socials{
+  width: 250px;
+              margin: 0.5em 1em;
+              padding: 0.25em 1em;
+              font-size: 2.2rem;
+              color: white;
+              display: flex;
+              justify-content: space-between;
+}
+
+.navbar-items{
+  padding-right:25px;
+              display: flex;
+              @media screen and (max-width: 480px) {
+                display:none;
+              }
 }
 .card {
   line-height: 1rem;
@@ -149,6 +154,17 @@ cursor: pointer;
   }
   h3{
     font-size: 1rem;
+  }
+  .first-box{
+    height:1150px;
+  }
+  .second-box{
+    height:1150px;
+  }
+ 
+  .socials{
+    font-size: 2rem;
+    padding: 0 0;
   }
   p {
     font-size: 1rem;
