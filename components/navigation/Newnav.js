@@ -15,7 +15,7 @@ const Newnav = ({ toggle }) => {
         justifyContent: "space-between",
       }}
     >
-      <h3 style={{ color: "white", paddingLeft: "25px" }}>DullyDesigns</h3>
+      <h3 style={{ color: "white", marginLeft: "25px" }}>DullyDesigns</h3>
       <MobileIcon onClick={toggle}>
         <FaBars />
       </MobileIcon>

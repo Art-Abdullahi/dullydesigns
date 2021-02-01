@@ -3,14 +3,17 @@ import Project from "./Project";
 import ProjectProvider from "./ProjectContext";
 import { ProjectContainer, ProjectGrid, ProjectHeading } from "./ProjectItems";
 
-const Projects = () => {
+const Projects = ({ articles }) => {
+  console.log(articles);
   return (
     <div>
       <ProjectProvider>
         <ProjectContainer>
           <ProjectHeading>Projects</ProjectHeading>
           <ProjectGrid>
-            <Project />
+            {articles.map((article) => (
+              <Project article={article} />
+            ))}
           </ProjectGrid>
         </ProjectContainer>
       </ProjectProvider>

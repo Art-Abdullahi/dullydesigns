@@ -24,11 +24,22 @@ export const CloseIcon = styled(FaTimes)`
 
 export const Icon = styled.div`
   position: absolute;
-  top: 1.2rem;
+  top: 2.2rem;
   right: 1.5rem;
   background: transparent;
   font-size: 2rem;
   cursor: pointer;
+  outline: none;
+`;
+
+export const Logo = styled.h3`
+  position: absolute;
+  top: 0.5rem;
+  left: 1.5rem;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  color: "ff0000";
   outline: none;
 `;
 
@@ -51,7 +62,10 @@ export const SideBarLink = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-family: cooper-black-std, serif;
+  font-weight: 400;
+  color: #ff0000;
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;

@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 24px;
+
+  @media screen and (max-width: 480px) {
+    width: 636px;
+  }
 `;
 export const AboutHeading = styled.h1`
-  text-align: left;
+  text-align: center;
   font-size: 5rem;
 
   width: 100%;
@@ -24,10 +27,10 @@ export const AboutHeading = styled.h1`
 export const AboutInfoContainer = styled.div`
   height: 60vh;
   width: 100%;
-
+  padding: 25px 25px 25px 25px;
   display: flex;
   justify-content: space-around;
-  margin-top: 2rem;
+  margin-top: 1rem;
   @media screen and (max-width: 480px) {
     flex-direction: column;
   }
@@ -36,7 +39,7 @@ export const AboutInfoContainer = styled.div`
 export const AboutInfo = styled.div`
   width: 50%;
   height: auto;
-
+  text-align: left;
   @media screen and (max-width: 480px) {
     width: 100%;
     flex-direction: column;

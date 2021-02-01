@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   AboutContainer,
   AboutHeading,
@@ -12,7 +12,9 @@ const About = () => {
       <AboutHeading>My Story</AboutHeading>
       <AboutInfoContainer>
         <AboutInfo>
-          <p>
+          <p
+            style={{ color: "#ff0000", fontSize: "1.5rem", lineHeight: "25px" }}
+          >
             Growing up there was a cyber cafe just around the house we lived in,
             where i would spend hours on the computer and explore it's
             posibilities. Fast foward after finishing highschool i got

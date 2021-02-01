@@ -45,7 +45,7 @@ h4 {
 h3 {
   font-size: 1.3rem;
   font-family: cooper-black-std, serif;
-  font-weight: 400;
+  font-weight: 200;
   color: #ff0000;
 }
 h6 {
@@ -119,6 +119,11 @@ h6 {
   border-radius: 3px;
 }
 
+
+input,textarea{
+  width: 100%;
+  padding: 1em;
+}
 
 nav{
     background: ${({ theme }) => theme.nav};

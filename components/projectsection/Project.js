@@ -1,28 +1,21 @@
-import React, { useContext, useEffect } from "react";
-import { ProjectsContext } from "./ProjectContext";
+import React from "react";
 
-const Project = () => {
-  const { projects, getProjects } = useContext(ProjectsContext);
-  useEffect(() => {
-    getProjects();
-  }, []);
+const Project = ({ article }) => {
   return (
     <div
       style={{
         width: "18rem",
         height: "auto",
-
         margin: "24px 24px 24px 24px",
 
         boxShadow: "-3px -3px 5px #ff0000, 3px 3px 15px #ff0000",
       }}
     >
-      {console.log(projects)}
-      <div className="card">
+      <div className="card" key={article.name}>
         <div>
           <img src="/foodhub.png" height="200px" width="100%" />
           <div className="card-body">
-            <h3 className="card-title">The Weather Report</h3>
+            <h3 className="card-title">{article.title}</h3>
             <h6 className="card-text">
               This is a progressive weather app that gives you fiveday forecast
               of any location around the globe.
