@@ -28,6 +28,10 @@ export const ContactHeading = styled.h1`
 
 export const ContactWrapper = styled.div`
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+  @media screen and (min-width: 700px) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
 `;
 
 export const ContactList = styled.ul`
@@ -41,6 +45,12 @@ export const ContactInfo = styled.div`
   color: white;
   text-align: center;
   margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: 100;
+  font-style: normal;
+  @media screen and (min-width: 700px) {
+  }
 `;
 
 export const ContactForm = styled.form`

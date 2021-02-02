@@ -28,7 +28,6 @@ export const GlobalStyles = createGlobalStyle`
 p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.5rem;
-  font-weight: bold;
   color: ${({ theme }) => theme.p};
   line-height: 2rem;
 }

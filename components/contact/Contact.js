@@ -12,6 +12,10 @@ import {
 import { Button } from "../heosection/BackgroundItems";
 
 const Contact = () => {
+  const handleInputs = () => {
+    console.log("inputs");
+  };
+
   return (
     <ContactContainer>
       <ContactHeading className="brand">Contact Me</ContactHeading>
@@ -26,29 +30,29 @@ const Contact = () => {
         </ContactInfo>
         <div className="contact">
           <h3>Email Me</h3>
-          <ContactForm>
+          <ContactForm id="contactForm" onSubmit={handleInputs}>
             <p>
               <Label>Name</Label>
-              <input type="text" name="name" />
+              <input type="text" name="name" id="name" />
             </p>
             <p>
               <Label>Company</Label>
-              <input type="text" name="company" />
+              <input type="text" name="company" id="company" />
             </p>
             <p>
               <Label>Email Adress</Label>
-              <input type="text" name="email" />
+              <input type="text" name="email" id="email" />
             </p>
             <p>
               <Label>Phone Number</Label>
-              <input type="text" name="phone" />
+              <input type="text" name="phone" id="phone" />
             </p>
             <Full>
               <Label>Message</Label>
-              <textarea name="message" rows="5"></textarea>
+              <textarea name="message" rows="5" id="message"></textarea>
             </Full>
             <Full>
-              <Button>Submit</Button>
+              <Button type="submit">Submit</Button>
             </Full>
           </ContactForm>
         </div>
